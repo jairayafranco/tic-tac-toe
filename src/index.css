@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+button {
+  margin-top: 3px;
+}
+
+.winner {
+  background-color: rgb(32, 177, 32);
+}
+
+.cells-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  border: 1px solid #fff;
+  width: 180px;
+  height: 180px;
+  font-size: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+}
